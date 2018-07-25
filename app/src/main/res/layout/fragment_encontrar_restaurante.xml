@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.win8.foodtemplate.Fragmento.EncontrarRestauranteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight="0.55"
+            android:scaleType="fitXY"
+            android:src="@drawable/fondo_encontrar2"
+            android:layout_height="0dp" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardUseCompatPadding="true"
+            android:layout_weight="0.45"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/ic_marcador48"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:text="LOS ANGELES CA."
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:background="@drawable/estilo_edittext"
+                        android:backgroundTint="#f0f0f0"
+                        android:layout_width="match_parent"
+                        android:hint="SEARCH YOUR RESTAURANT"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content" />
+                </android.support.v7.widget.CardView>
+                <Button
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:layout_width="165dp"
+                    android:background="@drawable/estilo_circle"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="FIND RESTAURANT"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>
